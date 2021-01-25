@@ -19,13 +19,25 @@ namespace WebApplication_musicstore_codefirst
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js", "~/Scripts/moment.js", "~/Scripts/bootstrap-datetimepicker.js"));
+
+        //    old bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+          //          "~/Scripts/bootstrap.js",
+            //        "~/Scripts/respond.js", "~/Scripts/moment.js", "~/Scripts/bootstrap-datetimepicker.js",
+
+          bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/musicstoretheme/plugins/swiper/js/swiper.min.js",
+                       "~/Scripts/musicstoretheme/plugins/player/jplayer.playlist.min.js", "~/Scripts/musicstoretheme/plugins/player/jquery.jplayer.min.js", "~/Scripts/musicstoretheme/plugins/player/audio-player.js",
+                       "~/Scripts/musicstoretheme/plugins/player/volume.js", "~/Scripts/musicstoretheme/plugins/nice_select/jquery.nice-select.min.js", "~/Scripts/musicstoretheme/plugins/scroll/jquery.mCustomScrollbar.js",
+                       "~/Scripts/musicstoretheme/custom.js"));
+            //  old only this in   bundles.Add(new StyleBundle("~/Content/css").Include(
+            //    "~/Content/bootstrap.css",
+            //        "~/Content/site.css", "~/Content/bootstrap-datetimepicker.css",
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css", "~/Content/bootstrap-datetimepicker.css"));
+                      "~/Content/musicstoretheme/fonts.css",
+                      "~/Content/musicstoretheme/bootstrap.css", "~/Content/musicstoretheme/font-awesome.min.css", "~/Scripts/musicstoretheme/plugins/swiper/css/swiper.min.css",
+                      "~/Scripts/musicstoretheme/plugins/nice_select/nice-select.css",
+                      "~/Scripts/musicstoretheme/plugins/player/volume.css", "~/Scripts/musicstoretheme/plugins/scroll/jquery.mCustomScrollbar.css", "~/Content/musicstoretheme/style.css"));
         }
     }
 }
