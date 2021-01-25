@@ -25,7 +25,7 @@ namespace WebApplication_musicstore_codefirst
             //        "~/Scripts/respond.js", "~/Scripts/moment.js", "~/Scripts/bootstrap-datetimepicker.js",
 
           bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/musicstoretheme/plugins/swiper/js/swiper.min.js",
+                      "~/Scripts/musicstoretheme/bootstrap.min.js", "~/Scripts/musicstoretheme/plugins/swiper/js/swiper.min.js",
                        "~/Scripts/musicstoretheme/plugins/player/jplayer.playlist.min.js", "~/Scripts/musicstoretheme/plugins/player/jquery.jplayer.min.js", "~/Scripts/musicstoretheme/plugins/player/audio-player.js",
                        "~/Scripts/musicstoretheme/plugins/player/volume.js", "~/Scripts/musicstoretheme/plugins/nice_select/jquery.nice-select.min.js", "~/Scripts/musicstoretheme/plugins/scroll/jquery.mCustomScrollbar.js",
                        "~/Scripts/musicstoretheme/custom.js"));
