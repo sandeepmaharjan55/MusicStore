@@ -1,0 +1,30 @@
+﻿@model WebApplication_musicstore_codefirst.ViewModels.ShoppingCartViewModel
+    @if (Model.CartItems != null)
+    {
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-shopping-cart"></span> @Model.CartTotal - Items<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-cart" role="menu">
+                @foreach (var item in Model.CartItems)
+                {
+                    <li>
+                        <span class="item">
+                <span class="item-left">
+                    <img src="@item.Album.AlbumArtUrl" height="20" width="20" alt="">
+                    <span class="item-info">
+                        <span>@item.Album.Title</span>
+                        <span>@item.Album.Price</span>
+                    </span>
+                </span>
+                <span class="item-right">
+                    <button class="btn btn-xs btn-danger pull-right">x</button>
+                </span>
+            </span>
+                    </li>
+                }
+                <li class="divider"></li>
+                <li><a class="text-center" href="">View Cart</a></li>
+            </ul>
+        </li>
+    }

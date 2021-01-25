@@ -1,0 +1,11 @@
+﻿@model List<string>
+<div class="col-md-3">
+    <p class="lead">Genre</p>
+    <div class="list-group">
+        @foreach (var genre in Model)
+        {
+            <a href="#" class="list-group-item">@genre</a>
+        }
+     
+    </div>
+</div>
