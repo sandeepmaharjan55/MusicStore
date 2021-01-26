@@ -389,6 +389,8 @@
     <Content Include="Musicstoreimages\weekly\song8.jpg" />
     <Content Include="Musicstoreimages\weekly\song9.jpg" />
     <Content Include="Musicstoreimages\windows.jpg" />
+    <Content Include="outputimages\img1.JPG" />
+    <Content Include="outputimages\img2.JPG" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\bootstrap.js" />
