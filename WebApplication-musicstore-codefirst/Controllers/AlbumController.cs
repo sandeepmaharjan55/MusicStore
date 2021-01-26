@@ -77,7 +77,7 @@ namespace WebApplication_musicstore_codefirst.Controllers
                         {
 
                             model.AlbumArtUrl =
-                                "https://lh3.googleusercontent.com/proxy/kbLsQWyWYevLLa1K4XcPAW91JQKXM3mfr2TPCiNHqmxIzUZ3T12Jwr5ynH1ZPqbIN0-5GKRifmPm1ji8mv5GV-KXsfEdDbd-2eCT6ygj3lY8";
+                                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png";
                         }
 
                     }

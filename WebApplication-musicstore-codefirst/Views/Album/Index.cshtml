@@ -1,9 +1,7 @@
 ﻿@model IEnumerable<WebApplication_musicstore_codefirst.Models.Album>
 
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+@{ ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 
 
@@ -13,73 +11,118 @@
 
 @if (TempData["SuccessMessage"] != null)
 {
-    <div class="alert alert-success  alert-dismissable">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+<div class="alert alert-success  alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 
-        <strong>Success!</strong> @TempData["SuccessMessage"]
-    </div>
-}
-@* 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    *@
-<div class="container">
-    @foreach (var item in Model)
-    {
-        <div class="col-xs-12 col-md-6 bootstrap snippets">
-            <!-- product -->
-            <div class="product-content product-wrap clearfix">
-                <div class="row">
-                    <div class="col-md-5 col-sm-12 col-xs-12">
-                        <div class="product-image">
-                            <img src="@item.AlbumArtUrl" alt="194x228" class="img-responsive">
-                            @if (item.IsFeatured)
-                            {
-                                <span class="tag2 hot">
-                                HOT
-                            </span>
-                            }
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-sm-12 col-xs-12">
-                        <div class="product-deatil">
-                            <h5 class="name">
-                                <a href="#">
-                                    @item.Title <span>@item.Genre.Name</span>
-                                </a>
-                            </h5>
-                            <p class="price-container">
-                                <span>@item.Price</span>
-                            </p>
-                            <span class="tag1"></span>
-                        </div>
-                        <div class="description">
-                            <p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
-                        </div>
-                        <div class="product-info smart-form">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <a href="javascript:void(0);" class="btn btn-success">Add to cart</a>
-                                    @Html.ActionLink("Edit", "Edit", new { id = item.AlbumId }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.AlbumId }) |
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.AlbumId })
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <div class="rating">
-                                        <label for="stars-rating-5"><i class="fa fa-star"></i></label>
-                                        <label for="stars-rating-4"><i class="fa fa-star"></i></label>
-                                        <label for="stars-rating-3"><i class="fa fa-star text-primary"></i></label>
-                                        <label for="stars-rating-2"><i class="fa fa-star text-primary"></i></label>
-                                        <label for="stars-rating-1"><i class="fa fa-star text-primary"></i></label>
+    <strong>Success!</strong> @TempData["SuccessMessage"]
+</div> } @*
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+*@ @*<div class="container">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-xs-12 col-md-6 bootstrap snippets">
+                            <!-- product -->
+                            <div class="product-content product-wrap clearfix">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 col-xs-12">
+                                        <div class="product-image">
+                                            <img src="@item.AlbumArtUrl" alt="194x228" class="img-responsive">
+                                            @if (item.IsFeatured)
+                                            {
+                                                <span class="tag2 hot">
+                                                HOT
+                                            </span>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12 col-xs-12">
+                                        <div class="product-deatil">
+                                            <h5 class="name">
+                                                <a href="#">
+                                                    @item.Title <span>@item.Genre.Name</span>
+                                                </a>
+                                            </h5>
+                                            <p class="price-container">
+                                                <span>@item.Price</span>
+                                            </p>
+                                            <span class="tag1"></span>
+                                        </div>
+                                        <div class="description">
+                                            <p>Proin in ullamcorper lorem. Maecenas eu ipsum </p>
+                                        </div>
+                                        <div class="product-info smart-form">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <a href="javascript:void(0);" class="btn btn-success">Add to cart</a>
+                                                    @Html.ActionLink("Edit", "Edit", new { id = item.AlbumId }) |
+                                                    @Html.ActionLink("Details", "Details", new { id = item.AlbumId }) |
+                                                    @Html.ActionLink("Delete", "Delete", new { id = item.AlbumId })
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <div class="rating">
+                                                        <label for="stars-rating-5"><i class="fa fa-star"></i></label>
+                                                        <label for="stars-rating-4"><i class="fa fa-star"></i></label>
+                                                        <label for="stars-rating-3"><i class="fa fa-star text-primary"></i></label>
+                                                        <label for="stars-rating-2"><i class="fa fa-star text-primary"></i></label>
+                                                        <label for="stars-rating-1"><i class="fa fa-star text-primary"></i></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- end product -->
+                        </div>
+                        }
+
+                </div>
+*@
+
+
+<!----Featured Albumn Section Start---->
+<div class="ms_fea_album_slider padder_top10 ">
+    <div class="ms_heading">
+        <h1>Featured Albums</h1>
+        <span class="veiw_all"><a href="#">view more</a></span>
+    </div>
+    <div class="ms_album_slider swiper-container">
+        <div class="swiper-wrapper">
+            @foreach (var item in Model)
+            {
+        <div class="swiper-slide">
+            <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                    <img src="@item.AlbumArtUrl" alt="">
+                    <div class="ms_main_overlay">
+                        <div class="ms_box_overlay"></div>
+                        <div class="ms_more_icon">
+                            <img src="/Musicstoreimages/svg/more.svg" alt="">
+                        </div>
+                        <ul class="more_option">
+                            <li><a href="#"><span class="opt_icon"><span class="icon icon_fav"></span></span>Add To Favourites</a></li>
+                            <li><a href="#"><span class="opt_icon"><span class="icon icon_queue"></span></span>Add To Queue</a></li>
+                            <li><a href="#"><span class="opt_icon"><span class="icon icon_dwn"></span></span>Download Now</a></li>
+                            <li><a href="#"><span class="opt_icon"><span class="icon icon_playlst"></span></span>Add To Playlist</a></li>
+                            <li><a href="#"><span class="opt_icon"><span class="icon icon_share"></span></span>Share</a></li>
+                        </ul>
+                        <div class="ms_play_icon">
+                            <img src="/Musicstoreimages/svg/play.svg" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="ms_rcnt_box_text">
+                    <h3><a href="album_single.html">@item.Title</a></h3>
+                    <p>@item.Genre.Name</p>
+                    <p>@item.Price</p>
+                    
+                </div>
             </div>
-            <!-- end product -->
         </div>
-    }
-
+            }
+                    </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next3 slider_nav_next"></div>
+    <div class="swiper-button-prev3 slider_nav_prev"></div>
 </div>
-
