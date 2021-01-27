@@ -172,7 +172,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AlbumController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ArtistController.cs" />
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\GenreController.cs" />
     <Compile Include="Areas\Admin\Controllers\SettingsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AlbumController.cs" />
@@ -453,6 +456,21 @@
     <Content Include="Areas\Admin\Views\Settings\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Artist\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Genre\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Genre\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Genre\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Genre\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Genre\Index.cshtml" />
     <None Include="Properties\PublishProfiles\asp.net-shop.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -495,6 +513,12 @@
     <Content Include="Views\Account\SendCode.cshtml" />
     <Content Include="Views\Account\VerifyCode.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Album\Details.cshtml" />
+    <Content Include="Views\Album\Index.cshtml" />
+    <Content Include="Views\Artist\Details.cshtml" />
+    <Content Include="Views\Artist\Index.cshtml" />
+    <Content Include="Views\Genre\Details.cshtml" />
+    <Content Include="Views\Genre\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -517,26 +541,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Album\Create.cshtml" />
-    <Content Include="Views\Album\Delete.cshtml" />
-    <Content Include="Views\Album\Details.cshtml" />
-    <Content Include="Views\Album\Edit.cshtml" />
-    <Content Include="Views\Album\Index.cshtml" />
     <Content Include="Views\Shared\FeatureAlbum.cshtml" />
     <Content Include="Views\Shared\Cart.cshtml" />
     <Content Include="Views\Home\LeftMenu.cshtml" />
-    <Content Include="Views\Artist\Create.cshtml" />
-    <Content Include="Views\Artist\Delete.cshtml" />
-    <Content Include="Views\Artist\Details.cshtml" />
-    <Content Include="Views\Artist\Edit.cshtml" />
-    <Content Include="Views\Artist\Index.cshtml" />
-    <Content Include="Views\Genre\Create.cshtml" />
-    <Content Include="Views\Genre\Delete.cshtml" />
-    <Content Include="Views\Genre\Details.cshtml" />
-    <Content Include="Views\Genre\Edit.cshtml" />
-    <Content Include="Views\Genre\Index.cshtml" />
     <Content Include="Views\ShoppingCart\Index.cshtml" />
-    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

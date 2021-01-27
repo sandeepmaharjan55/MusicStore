@@ -5,6 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
 <table class="table">
     <tr>
         <th>
@@ -24,8 +28,10 @@
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td>|
-            @Html.ActionLink("Details", "Details", new { id=item.GenreId })
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GenreId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GenreId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GenreId })
         </td>
     </tr>
 }
