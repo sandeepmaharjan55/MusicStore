@@ -1,0 +1,56 @@
+﻿@Styles.Render("~/Content/dashboard")
+<br/>
+<br />
+
+@{
+    ViewBag.Title = "Index";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+    <section>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-thumbs-up"></span> Admin Dashboard Buttons</h3>
+                    </div>
+                    <div class="panel-body">
+                        @*
+    <div class="row">
+        <div class="col-md-12">
+            <!-- grey -->
+            <a href="#" class="btn btn-grey btn-lg" role="button"><span class="glyphicon glyphicon-cog glyphsize red"></span> <br />Example<br />Button <span class="glyphicon glyphicon-cog black"></span></a>
+        </div>
+    </div>*@
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- lblue -->
+                                <a href="~/Skill" class="btn btn-lblue btn-lg" role="button"><span class="glyphicon glyphicon-list glyphsize blue"></span> <br /><span class="blue">Skill<span class="glyphicon glyphicon-plus green"></span><br />Manager</span></a>
+                                <a href="~/Companies" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-cloud glyphsize"></span> <br />Company <span class="glyphicon glyphicon-plus green"></span><br />Manager</a>
+ 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- dblue -->
+                                <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-cloud glyphsize"></span> <br />Add <span class="glyphicon glyphicon-plus green"></span><br />Customer</a>
+                                <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />edit <span class="glyphicon glyphicon-edit yellow"></span><br />Customer</a>
+                                <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Delete <span class="glyphicon glyphicon-minus red"></span><br />Customer</a>
+                                <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Customer<br />Marketing <span class="glyphicon glyphicon-envelope"></span></a>
+                                <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Customer<br />Reporting <span class="glyphicon glyphicon-signal"></span></a>
+                                <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Customer<br />Database <span class="glyphicon glyphicon-book"></span></a>
+                                <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Customer<br />Export - CSV <span class="glyphicon glyphicon-export"></span></a>
+                            </div>
+                        </div>
+                     
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
