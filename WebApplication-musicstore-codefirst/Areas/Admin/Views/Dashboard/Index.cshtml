@@ -1,9 +1,7 @@
-﻿@Styles.Render("~/Content/dashboard")
-<br/>
-<br />
-
+﻿
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml"; 
 }
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -11,7 +9,7 @@
 <!------ Include the above in your HEAD tag ---------->
 <div class="container">
     <section>
-        
+
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-primary">
@@ -20,18 +18,18 @@
                     </div>
                     <div class="panel-body">
                         @*
-    <div class="row">
-        <div class="col-md-12">
-            <!-- grey -->
-            <a href="#" class="btn btn-grey btn-lg" role="button"><span class="glyphicon glyphicon-cog glyphsize red"></span> <br />Example<br />Button <span class="glyphicon glyphicon-cog black"></span></a>
-        </div>
-    </div>*@
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- grey -->
+                                    <a href="#" class="btn btn-grey btn-lg" role="button"><span class="glyphicon glyphicon-cog glyphsize red"></span> <br />Example<br />Button <span class="glyphicon glyphicon-cog black"></span></a>
+                                </div>
+                            </div>*@
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- lblue -->
                                 <a href="~/Skill" class="btn btn-lblue btn-lg" role="button"><span class="glyphicon glyphicon-list glyphsize blue"></span> <br /><span class="blue">Skill<span class="glyphicon glyphicon-plus green"></span><br />Manager</span></a>
                                 <a href="~/Companies" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-cloud glyphsize"></span> <br />Company <span class="glyphicon glyphicon-plus green"></span><br />Manager</a>
- 
+
                             </div>
                         </div>
                         <div class="row">
@@ -46,9 +44,9 @@
                                 <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Customer<br />Export - CSV <span class="glyphicon glyphicon-export"></span></a>
                             </div>
                         </div>
-                     
+
                     </div>
-                   
+
                 </div>
             </div>
         </div>
